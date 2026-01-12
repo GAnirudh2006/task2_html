@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G Anirudh - Portfolio</title>
+    
+    <style>
+        /* BASIC ELEMENT SELECTORS */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f5f5dc;
+            font-family: 'Times New Roman', serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 15px;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            font-family: Georgia, serif;
+        }
+
+        h2 {
+            color: #2c3e50;
+            text-decoration: underline;
+            padding-bottom: 10px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 12px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 2px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        /* SIMPLE CLASS SELECTORS */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .hobby-img {
+            width: 180px;
+            height: 180px;
+        }
+
+        .float-left {
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 15px;
+            border: 3px solid #2c3e50;
+        }
+
+        .float-right {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            border: 3px solid #34495e;
+        }
+
+        .highlight {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: #34495e;
+            color: white;
+            padding: 12px 25px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        
+
+        /* ID SELECTOR FOR SPECIFIC BACKGROUND */
+        #about {
+            /* Background outside the box */
+            background-color: transparent; 
+            padding: 10px;
+        }
+
+        /* SPECIFIC TARGET: Background INSIDE the About box */
+        #about .section {
+            background-image: url('about-me2.jpg');
+			
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        #home {
+            background-color: #ecf0f1;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        /* CLEARFIX FOR FLOATED IMAGES */
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>G Anirudh</h1>
+        <p style="font-size: 22px; color: #ecf0f1; font-weight: bold;">Welcome to My Portfolio</p>
+        <p style="font-size: 18px; color: #bdc3c7;">Web Developer | Student | Tech Enthusiast</p>
+    </header>
+
+    <nav>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="container">
+        
+        <div id="home">
+            <h2 style="text-decoration: none;">Introduction</h2>
+            <p style="font-size: 20px;">
+                Hello! I'm <span class="highlight">G Anirudh</span>, a passionate student and aspiring web developer.
+            </p>
+            <p>
+                This portfolio showcases my journey in web development, my skills, services I offer, 
+                and how you can connect with me. Welcome to my digital space!
+            </p>
+        </div>
+
+        <div id="about">
+            <div class="section">
+                <h2>About Me</h2>
+                <p>I'm a dedicated student with a passion for web development and technology.</p>
+                
+                <img src="aniboi.jpg" alt="G Anirudh Photo 1" class="profile-img float-left">
+                
+                <p>
+                    My journey in web development started  with curiosity about how websites work.<p> 
+                    I love creating beautiful and functional web pages using HTML and CSS.<p><p> Through continuous 
+                    learning and practice, I have developed strong skills in front-end web development.
+                </p>
+                
+                <p>
+                    I believe in the power of technology to solve real-world problems and make life easier. 
+                    My approach is to keep things simple yet effective. I'm always eager to learn new 
+                    technologies and improve my skills.
+                </p>
+                
+                <div class="clear"></div>
+                
+                <img src="myself.jpeg" alt="G Anirudh Photo 2" class="profile-img float-right">
+                
+                <p>
+                    As a student, I balance my academic responsibilities with my passion for coding. 
+                    I spend my free time working on web projects, learning new programming concepts, 
+                    and exploring the latest trends in web development.
+                </p>
+                
+                <p>
+                    My goal is to become a professional full-stack web developer and create websites 
+                    that make a difference. I'm particularly interested in creating user-friendly 
+                    interfaces and responsive designs.
+                </p>
+                
+                <div class="clear"></div>
+                
+                <h3>My Skills</h3>
+                <p><strong>Technical Skills:</strong></p>
+                <ul style="padding-left: 40px;">
+                    <li>HTML - Creating structured web content</li>
+                    <li>CSS - Styling and designing web pages</li>
+                    <li>Web Design - User-friendly interfaces</li>
+                    <li>Responsive Design - Mobile-friendly websites</li>
+					
+                </ul>
+				
+				<p><strong>Achievments:</strong></p>
+                <ul style="padding-left: 40px;">
+                    <li>Solved 90+ Leetcode Problems.</li>
+                    <li>Completed a python Course on Udemy</li>
+					<li>Secured 91% and 91.2% in 10th and 12th boards</li>
+                </ul>
+                
+                <p><strong>Soft Skills:</strong></p>
+                <ul style="padding-left: 40px;">
+                    <li>Problem Solving</li>
+                    <li>Creativity</li>
+                    <li>Communication</li>
+                    <li>Time Management</li>
+                </ul>
+				<p>
+
+                <h3>Interests and Hobbies</h3>
+                <img src="football.jpg" alt="football" class="hobby-img float-left">
+                <p>
+                    I like to play <span class="highlight">Football</span> and I enjoy the teamwork, 
+                    skill, and strategy involved. Football also brings people together,
+                    whether I’m playing with friends or watching a match—it’s always fun and thrilling.
+                </p>
+                
+                <img src="relationship.jpg" alt="Coding Projects" class="hobby-img float-right">
+                <p>
+                   I like to spend time with my <span class="highlight">siblings</span>.Love to play Uno cards and monopoly with them.Apart from that, I like to spend some time alone or with my friends .
+                </p>
+				
+                
+                <div class="clear"></div>
+
+                <h3>Education</h3>
+                <table>
+                    <tr>
+                        <th>Level</th>
+                        <th>Institution/Board</th>
+                        <th>Year</th>
+                        <th>Percentage</th>
+                    </tr>
+                    <tr>
+                        <td>10th Standard</td>
+                        <td>CBSE</td>
+                        <td>2021</td>
+                        <td>91%</td>
+                    </tr>
+                    <tr>
+                        <td>12th Standard</td>
+                        <td>CBSE</td>
+                        <td>2023</td>
+                        <td>91.2%</td>
+                    </tr>
+                    <tr>
+                        <td>Bachelor's Degree</td>
+                        <td>University Name</td>
+                        <td>2024-2028</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="services">
+            <div class="section">
+                <h2>Services I Offer</h2>
+                <p>As a web developer, I offer various services to help bring your digital ideas to life.</p>
+                <ul style="list-style-type: disc; padding-left: 40px; line-height: 2;">
+                    <li><strong>Website Design</strong> - Creating visually appealing and user-friendly designs.</li>
+                    <li><strong>HTML & CSS Development</strong> - Building responsive websites for all devices.</li>
+                    <li><strong>Website Customization</strong> - Adjusting layouts and colors of existing sites.</li>
+                    <li><strong>Portfolio Websites</strong> - Showcasing your work and skills professionally.</li>
+                    <li><strong>Web Consulting</strong> - Providing guidance on best practices and tech stacks.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="section">
+                <h2 style="text-align: center;">Contact Me</h2>
+                <p style="text-align: center;">I'd love to hear from you! Feel free to reach out.</p>
+                
+                <h3>Professional Contacts</h3>
+                <table>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Contact Details</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Gmail</strong></td>
+                        <td><a href="mailto:anirudh.g1975@gmail.com">Send email</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Phone</strong></td>
+                        <td>+91 9876543210</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Location</strong></td>
+                        <td>India</td>
+                    </tr>
+                </table>
+
+                <h3 style="text-align: center;">Connect with Me</h3>
+                <div style="text-align: center;">
+                    <a href="https://github.com/" target="_blank" class="contact-btn">GitHub</a>
+                    <a href="https://linkedin.com/in/" target="_blank" class="contact-btn">LinkedIn</a>
+                    <a href="https://twitter.com/" target="_blank" class="contact-btn">Twitter</a>
+                    <a href="https://youtube.com/" target="_blank" class="contact-btn">YouTube</a>
+                </div>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="https://github.com/" target="_blank">
+                        <img src="github.jpg" alt="GitHub" style="width: 60px">
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img src="linkedin.jpg" alt="LinkedIn" style="width: 60px ">
+                    </a>
+                    <a href="https://mail.google.com/">
+                        <img src="gmail.jpg" alt="Gmail" style="width: 70px ">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2 style="color: white; border: none; text-decoration: none;">Thank You for Visiting!</h2>
+        <p>Contact: anirudh.g1975@gmail.com | Phone: +91 9876543210</p>
+        <p style="margin-top: 10px;">
+            <a href="#home" style="color: white; margin: 5px;">Home</a> | 
+            <a href="#about" style="color: white; margin: 5px;">About</a> | 
+            <a href="#services" style="color: white; margin: 5px;">Services</a> | 
+            <a href="#contact" style="color: white; margin: 5px;">Contact</a>
+        </p>
+        <p style="margin-top: 15px; font-size: 14px; opacity: 0.7;">
+            &copy; 2026 G Anirudh. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
